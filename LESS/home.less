@@ -15,17 +15,43 @@
 
     .school-kids{
         height:300px;
-        width: 30%;
+        width: 50%;
+
+
+        @media @desktop {
+            display:flex;
+            height: 300px;
+            width: 33%;
+        }
       }
     
       .kids-hug{
-        height: 300px;
-        width: 30%
+        display:none;
+
+        @media @tablet {
+            display: flex;
+            width:50%;
+        }
+
+        @media @desktop {
+            display:flex;
+            height: 300px;
+            width: 34%;
+        }
       }
     
       .laughing-kids{
-        height: 300px;
-        width: 30%
+        display: none;
+
+        @media @tablet {
+            display: none;
+        }
+
+        @media @desktop {
+            display:flex;
+            height: 300px;
+            width: 33%;
+        }
       }
 }
 

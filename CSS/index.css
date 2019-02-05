@@ -189,7 +189,6 @@ header h1 {
 }
 header nav {
   padding: 1rem 0.9rem;
-  margin: 0 28.4rem;
   display: flex;
   justify-content: space-around;
 }
@@ -226,15 +225,45 @@ header nav a:hover {
 }
 .mid-imgs .school-kids {
   height: 300px;
-  width: 30%;
+  width: 50%;
+}
+@media (min-width: 1000px) {
+  .mid-imgs .school-kids {
+    display: flex;
+    height: 300px;
+    width: 33%;
+  }
 }
 .mid-imgs .kids-hug {
-  height: 300px;
-  width: 30%;
+  display: none;
+}
+@media (min-width: 800px) {
+  .mid-imgs .kids-hug {
+    display: flex;
+    width: 50%;
+  }
+}
+@media (min-width: 1000px) {
+  .mid-imgs .kids-hug {
+    display: flex;
+    height: 300px;
+    width: 34%;
+  }
 }
 .mid-imgs .laughing-kids {
-  height: 300px;
-  width: 30%;
+  display: none;
+}
+@media (min-width: 800px) {
+  .mid-imgs .laughing-kids {
+    display: none;
+  }
+}
+@media (min-width: 1000px) {
+  .mid-imgs .laughing-kids {
+    display: flex;
+    height: 300px;
+    width: 33%;
+  }
 }
 .info .stories {
   display: flex;
