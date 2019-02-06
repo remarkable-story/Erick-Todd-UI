@@ -202,6 +202,7 @@ a {
   display: block;
   padding: 20px 20px;
   text-decoration: none;
+  border-radius: 30px;
   font-size: 17px;
   font-weight: bold;
   display: flex;
@@ -303,8 +304,10 @@ a {
   }
 }
 .sticky-btn {
+  opacity: 0.8;
   position: fixed;
-  top: 12%;
+  right: 0px;
+  top: 11.8%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -323,59 +326,85 @@ a {
   justify-content: center;
   align-items: center;
 }
-.mid-imgs {
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+.mySlides img {
+  width: 50%;
+  margin: 0 auto;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
-.mid-imgs .school-kids {
-  height: 100%;
-  width: 70%;
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
 }
-@media (min-width: 500px) {
-  .mid-imgs .school-kids {
-    display: flex;
-    width: 50%;
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+/* The dots/bullets/indicators */
+/*.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+} */
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
   }
 }
-@media (min-width: 800px) {
-  .mid-imgs .school-kids {
-    display: flex;
-    height: 100%;
-    width: 33%;
+@keyframes fade {
+  from {
+    opacity: 0.4;
   }
-}
-.mid-imgs .kids-hug {
-  display: none;
-}
-@media (min-width: 500px) {
-  .mid-imgs .kids-hug {
-    display: flex;
-    width: 50%;
-    height: 100%;
-  }
-}
-@media (min-width: 800px) {
-  .mid-imgs .kids-hug {
-    display: flex;
-    height: 100%;
-    width: 34%;
-  }
-}
-.mid-imgs .laughing-kids {
-  display: none;
-}
-@media (min-width: 500px) {
-  .mid-imgs .laughing-kids {
-    display: none;
-  }
-}
-@media (min-width: 800px) {
-  .mid-imgs .laughing-kids {
-    display: flex;
-    height: 300px;
-    width: 33%;
+  to {
+    opacity: 1;
   }
 }
 .info .stories {
@@ -402,11 +431,10 @@ a {
   width: 200px;
   height: 35px;
   background-color: #FAA422;
-  color: teal;
-  border: 1px solid black;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
+  color: black;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
