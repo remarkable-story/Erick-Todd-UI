@@ -1,67 +1,105 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <link href="https://fonts.googleapis.com/css?family=PT+Serif%7CWork+Sans:700" rel="stylesheet">
-        <title>Bountiful</title>
-        <link rel="stylesheet" href="./css/index.css">
-        <link rel="stylesheet" href="./less/index.less">
-        <script src="./index.js"async></script>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif%7CWork+Sans:700" rel="stylesheet">
+    <title>Bountiful</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./less/index.less">
+</head>
 
 <body>
-<header>
-    <div class="bountiful-logo">[Logo goes here]</div>
-    <h1>Bountiful Children's Foundation</h1>
-    <nav>
-        <a href="#">About Us</a>
-        <a href="#">Our Work</a>
-        <a href="#">Get Involved</a>
-        <a href="#">Contact Us</a>
-    </nav>
-</header>
-
-<div class="container">
-<section class="intro-content">
-    <h3>We Are Bountiful</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et cursus est. Praesent vel metus aliquet, posuere sem euismod, blandit purus. Morbi id nisi nunc. Nullam non tristique mi, non interdum ipsum. Etiam quis nisi dictum, feugiat felis in, tincidunt lectus. Fusce convallis et eros nec tristique. Aenean porta nulla at lacinia interdum.</p>
-</section>
-
-<section class="intro-content">
-    <h3>Our Mission</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et cursus est. Praesent vel metus aliquet, posuere sem euismod, blandit purus. Morbi id nisi nunc. Nullam non tristique mi, non interdum ipsum. Etiam quis nisi dictum, feugiat felis in, tincidunt lectus. Fusce convallis et eros nec tristique. Aenean porta nulla at lacinia interdum.</p>
-</section>
-
-<section class="intro-content">
-    <h3>Give Me Money</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et cursus est. Praesent vel metus aliquet, posuere sem euismod, blandit purus. Morbi id nisi nunc. Nullam non tristique mi.</p>
-</section>
-
-<section class="info">
-    <div class="stories">
-        <div class="box box1">Kiribati</div>
-        <div class="box box2">Madagascar</div>
-        <div class="box box3">Peru</div>
-        <div class="box box4">Boliva</div>
-        <div class="box box5">Panama</div>
-        <div class="box box6">Philippines</div>
-    </div>
-</section>
-
-<section class="globe">
-    <div class="map">
-<!-- Space for interactive map -->
-    </div>
-</section>
-
-<section class="donate-button">
-    <p>Donate Here</p>
-</section>
+    <header class="header">
+        <a href="#" class="logo">Bountiful</a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+            <li><a href="#">Who We Are</a></li>
+            <li><a href="#">Volunteer/Donate</a></li>
+        </ul>
+    </header>
     
+    <div class="container">
+        <section class="intro-content">
+            <h3>Bountiful Children's Foundation</h3>
+            <p>Bountiful Children's Foundation is a non-profit organization bringing life-altering nutritional supplements to children throughout the world.Simply put, our mission is to nurture the potential of infants and toddlers to lead healthy, productive, and self-reliant lives by eliminating undernutrition.</p>
+            <section class="donate-button">
+                <a href="https://deploy-preview-2--nostalgic-roentgen-f369b4.netlify.com/">Sign Up Here</a>
+            </section>
+        </section>
+        
+        <img src="imgs\beach-boys-children-939702.jpeg" class="beach-boys" alt="boys jumping on a beach">
+        
+        <section class="intro-content">
+            <h3>Our Mission</h3>
+            <p>30% of children worldwide are undernourished. Few of us can comprehend the despair and helplessness felt by millions of mothers when they lock eyes with their hungry child and know they have no food to offer them. That's where Bountiful comes in.</p>
+            <p>We have served 30,000 children since 2008, providing ready to use therapeutic foods, micronutrients, and health lessons. Over 200 million children globally are undernourished, and even more go hungry every day. They didn't choose to be the circumstances they're in, and they'd love to have the energy to play and grow.</p>
+        </section>
+        
+        
+        <!-- Slideshow div-->
+        <div class="slider">
+            <ul>
+                <li>
+                    <img src="https://images.pexels.com/photos/1686465/pexels-photo-1686465.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
+                </li>
+                <li>
+                    <img src="https://images.pexels.com/photos/1686467/pexels-photo-1686467.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
+                </li>
+                <li>
+                    <img src="https://images.pexels.com/photos/1801046/pexels-photo-1801046.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
+                </li>
+            </ul>
+        </div>
+        
+        
+        <section class="intro-content">
+            <h3>#Ourbountiful stories</h3>
+            <p>Below are a few of stories of our impact. </p>
+        </section>
+        
+        <!---Accordion div--->
+        <div id="accordion">
+            <div class="title active">Story #1</div>
+            <div class="accordion-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.<br>- "Example User #1"</div>
+            
+            <div class="title">Story #2</div>
+            <div class="accordion-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.<br>- "Example User #2"</div>
+            
+            <div class="title">Story #3</div>
+            <div class="accordion-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.<br>- "Example User #3"</div> 
+            
+            <div class="title">Story #4</div>
+            <div class="accordion-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.<br>- "Example User #4"</div>
+        </div> 
+
+        <section class="donate-button">
+            <a href="https://deploy-preview-2--nostalgic-roentgen-f369b4.netlify.com/">Sign Up Here</a>
+        </section>
+
+        <div class='tableauPlaceholder' id='viz1549401526339' style='position: relative'><noscript>
+            <a href='#'>
+                <img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;G4&#47;G497WYG3F&#47;1_rss.png' style='border: none' />
+            </a>
+        </noscript>
+        <object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+            <param name='embed_code_version' value='3' /> 
+            <param name='path' value='shared&#47;G497WYG3F' /> 
+            <param name='toolbar' value='yes' />
+            <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;G4&#47;G497WYG3F&#47;1.png' /> 
+            <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' />
+            <param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' />
+            <param name='display_count' value='yes' /><param name='filter' value='publish=yes' />
+        </object>
+        </div>  
+</div>
+
 <footer>
     © 2019 Bountiful Children's Foundation
 </footer>
-</div>  
+
+<script src="./index.js"async></script>
+
 </body>
 
 </html>
