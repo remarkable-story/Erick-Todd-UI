@@ -12,6 +12,13 @@
     .center;
 }
 
+.beach-boys{
+  height:100%;
+  width: 100%;
+  margin: 0 auto;
+  .center;
+}
+
 /* Slideshow container */
 .slider {
     box-shadow: 0px 4px 10px #9d9d9d;
@@ -81,31 +88,8 @@
     100% {left: 0%;}
   }
 
-/* */
 
-.info .stories {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-.info .stories .box {
-    font-size: 16px;
-    width: 25%;
-    height: 100px;
-    background: teal;
-    margin: 20px 2.5%;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    &:hover {
-        color: white;
-        background-color: @lighter-bg;
-    }
-}
-
+/*Donate Button*/
 .donate-button a{
     .custom-btn(@width: 200px, @height: 35px, @bgcolor: @main-color, @font-color: black);
     margin: 5px auto 10px;
@@ -113,6 +97,8 @@
     text-decoration: none;
 }
 
+
+/*Accordion*/
 #accordion {
     max-width: 400px;
     margin: 0 auto;
@@ -145,10 +131,16 @@
     line-height: 1.6;
 }
 
+/*Tableau*/
+.tableauPlaceholder {
+  background-color: @accent;
+}
+
+
+/*Footer*/
 footer {
     font-size: 15px;
     .center;
     padding: 20px;
-    margin-top: 25px;
     background-color: @nav-bg;
 }

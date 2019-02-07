@@ -169,14 +169,6 @@ p {
     width: 770px;
   }
 }
-.beach-boys {
-  height: 100%;
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 body {
   margin: 0;
   font-family: 'PT Serif', serif;
@@ -319,6 +311,14 @@ a {
   justify-content: center;
   align-items: center;
 }
+.beach-boys {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /* Slideshow container */
 .slider {
   box-shadow: 0px 4px 10px #9d9d9d;
@@ -433,27 +433,7 @@ img {
     left: 0%;
   }
 }
-/* */
-.info .stories {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-.info .stories .box {
-  font-size: 16px;
-  width: 25%;
-  height: 100px;
-  background: teal;
-  margin: 20px 2.5%;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.info .stories .box:hover {
-  color: white;
-  background-color: #028d8d;
-}
+/*Donate Button*/
 .donate-button a {
   width: 200px;
   height: 35px;
@@ -476,6 +456,7 @@ img {
   background-color: teal;
   color: #FBA423;
 }
+/*Accordion*/
 #accordion {
   max-width: 400px;
   margin: 0 auto;
@@ -506,12 +487,16 @@ img {
   color: black;
   line-height: 1.6;
 }
+/*Tableau*/
+.tableauPlaceholder {
+  background-color: #C12E6A;
+}
+/*Footer*/
 footer {
   font-size: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px;
-  margin-top: 25px;
   background-color: teal;
 }
