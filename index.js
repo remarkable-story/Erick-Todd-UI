@@ -18,20 +18,6 @@ class Accordion {
         });
      });
   }
-  
-  showAll() {
-     const accordionHeading = document.querySelectorAll(this.heading);
-     
-     accordionHeading.forEach((item, key) => {
-        item.addEventListener('click', () => { 
-           item.classList.contains('active') ? 
-              item.classList.remove('active') :            
-              item.classList.add('active');
-        });
-     });
-  }
 }
-
 const accordion = new Accordion('.title');
-// for open every use showAll();
 accordion.showOne();

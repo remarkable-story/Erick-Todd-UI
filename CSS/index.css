@@ -308,7 +308,7 @@ a {
   padding: 20px;
 }
 .intro-content h3 {
-  padding: 0px 20px;
+  padding: 10px 20px 0px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -458,7 +458,7 @@ img {
   width: 200px;
   height: 35px;
   background-color: #FBA423;
-  color: teal;
+  color: black;
   border-radius: 15px;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
@@ -479,6 +479,7 @@ img {
 #accordion {
   max-width: 400px;
   margin: 0 auto;
+  padding-bottom: 20px;
 }
 #accordion .title {
   padding: 20px;
@@ -510,6 +511,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  padding: 20px;
+  margin-top: 25px;
   background-color: teal;
 }
