@@ -1,29 +1,37 @@
-//-------------Carousel
-var slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1} 
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none"; 
+//----------Accordion-----////
+class Accordion {
+  constructor(heading) {
+     this.heading = heading;
   }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
+  
+  showOne() {
+     const accordionHeading = document.querySelectorAll(this.heading);
+     
+     accordionHeading.forEach((item, key) => {
+        item.addEventListener('click', () => { 
+           accordionHeading.forEach(element => {
+              element.classList.contains('active') ? 
+                 element.classList.remove('active') : null;
+           });
+           
+           item.classList.add('active');
+        });
+     });
   }
-  slides[slideIndex-1].style.display = "block"; 
-  dots[slideIndex-1].className += " active";
+  
+  showAll() {
+     const accordionHeading = document.querySelectorAll(this.heading);
+     
+     accordionHeading.forEach((item, key) => {
+        item.addEventListener('click', () => { 
+           item.classList.contains('active') ? 
+              item.classList.remove('active') :            
+              item.classList.add('active');
+        });
+     });
+  }
 }
+
+const accordion = new Accordion('.title');
+// for open every use showAll();
+accordion.showOne();

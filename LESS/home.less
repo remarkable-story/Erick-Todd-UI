@@ -3,92 +3,85 @@
 }
 
 .intro-content h3 {
-    padding-bottom: 10px;
+    padding: 0px 20px;
     .center;
 }
 
 .intro-content p {
+    padding: 20px;
     .center;
 }
 
 /* Slideshow container */
-.slideshow-container {
-    max-width: 1000px;
+.slider {
+    box-shadow: 0px 4px 10px #9d9d9d;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    max-width: 700px;
+    border-radius: 4px;
+  }
+  
+  .slider ul {
+    width: 1000%;
+    height: auto;
     position: relative;
-    margin: auto;
-}
+    list-style: none;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+    -moz-animation:slide-animation 15s infinite;
+    -webkit-animation:slide-animation 15s infinite;
+  }
+  
+  .slider ul:hover {
+    -moz-animation-play-state:paused;
+    -webkit-animation-play-state:paused;
+  }
+  
+  .slider li {
+    width: 10%;
+    list-style: none;
+    float: left;
+    margin: 0;
+    padding: 0;
+  }
+  
+  img {
+    max-width: 100%;
+    border-radius: 4px;
+  }
+  
+  @-webkit-keyframes slide-animation {
+    1% {left: 0%; opacity: 1;}
+    18% {left: 0%; opacity: 1}
+    19% {opacity: 0.2;}
+    20% {left: -100%; opacity: 1;}
+    58% {left: -100%; opacity: 1;}
+    59% {opacity: 0.2;}
+    60% {left: -200%; opacity: 1;}
+    98% {left: -200%; opacity: 1;}
+    99% {opacity: 0.5;}
+    100% {left: 0%;}
+  }
+  
+  @-moz-keyframes slide-animation {
+    1% {left: 0%; opacity: 1;}
+    18% {left: 0%; opacity: 1}
+    19% {opacity: 0.2;}
+    20% {left: -100%; opacity: 1;}
+    58% {left: -100%; opacity: 1;}
+    59% {opacity: 0.2;}
+    60% {left: -200%; opacity: 1;}
+    98% {left: -200%; opacity: 1;}
+    99% {opacity: 0.5;}
+    100% {left: 0%;}
+  }
 
-/* Hide the images by default */
-.mySlides {
-    display: none;
-}
-
-.mySlides img{
-    width: 50%;
-    margin: 0 auto; 
-    .center;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-}
-
-/* The dots/bullets/indicators */
-/*.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-} */
-
-.active, .dot:hover {
-    background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-}
-
-@keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-}
+/* */
 
 .info .stories {
     display: flex;
@@ -113,13 +106,47 @@
     }
 }
 
-.donate-button {
+.donate-button a{
     .custom-btn(@width: 200px, @height: 35px, @bgcolor: @main-color, @font-color: teal);
+    margin: 5px auto 10px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+#accordion {
+    max-width: 400px;
     margin: 0 auto;
+}
+
+#accordion .title {
+    padding: 20px;
+    background-color: @nav-bg;
+    font-size: 15px;
+    .center;
+}
+
+#accordion .title.active + .accordion-content {
+    max-height: 500px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#accordion .accordion-content {
+    max-height: 0;
+    padding: 0 20px;
+    border: 1px solid #aaa;
+    border-top: 0;
+    overflow: hidden;
+    transition: max-height 0.3s, padding 0.3s;
+    font-size:15px;
+    background-color:white;
+    color: black;
+    line-height: 1.6;
 }
 
 footer {
     font-size: 15px;
     .center;
-    padding: 5px;
+    padding: 10px;
+    background-color: @nav-bg;
 }
