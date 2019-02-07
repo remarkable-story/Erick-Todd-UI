@@ -134,6 +134,11 @@
 /*Tableau*/
 .tableauPlaceholder {
   background-color: @accent;
+  display: none;
+
+  @media @tablet {
+    display: block;
+  }
 }
 
 
@@ -143,7 +148,7 @@ footer {
     .center;
 
     padding: 20px;
-    background-color: @nav-bg;
+    background-color: @lighter-bg;
 }
 
 

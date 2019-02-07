@@ -490,6 +490,12 @@ img {
 /*Tableau*/
 .tableauPlaceholder {
   background-color: #C12E6A;
+  display: none;
+}
+@media (min-width: 500px) {
+  .tableauPlaceholder {
+    display: block;
+  }
 }
 /*Footer*/
 footer {
@@ -498,5 +504,5 @@ footer {
   justify-content: center;
   align-items: center;
   padding: 20px;
-  background-color: teal;
+  background-color: #028d8d;
 }
