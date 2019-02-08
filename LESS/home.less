@@ -1,37 +1,36 @@
 .intro-content {
-    padding: 20px;
+  padding: 20px;
 }
 
 .intro-content h3 {
-    padding: 10px 20px 0px;
-    .center;
+  padding: 10px 20px 0px;
+  .center;
 }
 
 .intro-content p {
-    padding: 20px;
-    .center;
+  padding: 20px;
+  .center;
 }
 
 .beach-boys{
   height:100%;
   width: 100%;
   margin: 0 auto;
+  padding: 0px 40px;
   .center;
 }
 
 /* Slideshow container */
 .slider {
-    box-shadow: 0px 4px 10px #9d9d9d;
-    padding: 0;
-    margin: 0;
-    max-width: 100%;
-    margin: 0 auto;
-    overflow: hidden;
-    max-width: 700px;
-    border-radius: 4px;
-  }
+  box-shadow: 0px 4px 10px #9d9d9d;
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  max-width: 700px;
+  border-radius: 50px;
   
-  .slider ul {
+  
+  ul {
     width: 1000%;
     height: auto;
     position: relative;
@@ -44,12 +43,12 @@
     -webkit-animation:slide-animation 15s infinite;
   }
   
-  .slider ul:hover {
+  ul:hover {
     -moz-animation-play-state:paused;
     -webkit-animation-play-state:paused;
   }
   
-  .slider li {
+  li {
     width: 10%;
     list-style: none;
     float: left;
@@ -59,7 +58,6 @@
   
   img {
     max-width: 100%;
-    border-radius: 4px;
   }
   
   @-webkit-keyframes slide-animation {
@@ -87,38 +85,38 @@
     99% {opacity: 0.5;}
     100% {left: 0%;}
   }
-
+}
 
 /*Donate Button*/
 .donate-button a{
-    .custom-btn(@width: 200px, @height: 35px, @bgcolor: @main-color, @font-color: black);
-    margin: 5px auto 10px;
-    font-size: 16px;
-    text-decoration: none;
+  .custom-btn(@width: 200px, @height: 35px, @bgcolor: @main-color, @font-color: black);
+  margin: 5px auto 10px;
+  font-size: 16px;
+  text-decoration: none;
 }
 
 
 /*Accordion*/
 #accordion {
-    max-width: 400px;
-    margin: 0 auto;
-    padding-bottom: 20px;
-}
-
-#accordion .title {
+  max-width: 400px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  
+  
+  .title {
     padding: 20px;
     background-color: @nav-bg;
     font-size: 15px;
     .center;
-}
-
-#accordion .title.active + .accordion-content {
+  }
+  
+  .title.active + .accordion-content {
     max-height: 500px;
     padding-top: 20px;
     padding-bottom: 20px;
-}
-
-#accordion .accordion-content {
+  }
+  
+  .accordion-content {
     max-height: 0;
     padding: 0 20px;
     border: 1px solid #aaa;
@@ -129,13 +127,13 @@
     background-color:white;
     color: black;
     line-height: 1.6;
+  }
 }
-
 /*Tableau*/
 .tableauPlaceholder {
   background-color: @accent;
   display: none;
-
+  
   @media @tablet {
     display: block;
   }
@@ -144,11 +142,11 @@
 
 /*Footer*/
 footer {
-    font-size: 15px;
-    .center;
-
-    padding: 20px;
-    background-color: @lighter-bg;
+  font-size: 15px;
+  .center;
+  margin-top: 10px;
+  padding: 20px;
+  background-color: @lighter-bg;
 }
 
 
