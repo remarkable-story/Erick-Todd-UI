@@ -249,14 +249,14 @@ a {
   cursor: pointer;
   display: inline-block;
   float: right;
-  padding: 28px 20px;
+  padding: 26px 20px;
   position: relative;
   user-select: none;
 }
 .header .menu-icon .navicon {
   background: #C12E6A;
   display: block;
-  height: 2px;
+  height: 3.5px;
   position: relative;
   transition: background 0.2s ease-out;
   width: 18px;
